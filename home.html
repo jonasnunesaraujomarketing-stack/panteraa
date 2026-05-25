@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitão América</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #3b9cd7;
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Container principal (Borda interna cinza) */
+        .main-container {
+            background-color: #d9d9d9;
+            width: 100%;
+            max-width: 1000px;
+            border-radius: 25px;
+            padding: 30px;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* Barra de Navegação / Topo */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .nav-left {
+            display: flex;
+            gap: 40px;
+        }
+
+        .nav-btn {
+            background-color: #006699;
+            color: #000000;
+            text-decoration: none;
+            font-family: 'Spicy Rice', serif;
+            font-size: 22px;
+            padding: 6px 35px;
+            border-radius: 20px;
+            display: inline-block;
+            transition: opacity 0.2s;
+        }
+
+        .nav-btn:hover {
+            opacity: 0.9;
+        }
+
+        .main-title {
+            font-family: 'Spicy Rice', serif;
+            font-size: 28px;
+            color: #000000;
+            font-weight: normal;
+            text-transform: capitalize;
+        }
+
+        /* Seção da Imagem Principal */
+        .hero-section {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+
+        .hero-border {
+            background-color: #3b9cd7;
+            padding: 12px;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 600px;
+            height: 280px;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+            display: block;
+        }
+
+        /* Texto Descritivo */
+        .description-text {
+            font-family: 'Spicy Rice', serif;
+            font-size: 16px;
+            line-height: 1.4;
+            color: #000000;
+            text-align: left;
+            margin: 0 auto 40px auto;
+            max-width: 900px;
+            word-spacing: 1px;
+        }
+
+        /* Galeria de Imagens Inferior */
+        .imagens-debaixo {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .gallery-card {
+            background-color: #3b9cd7;
+            padding: 8px;
+            border-radius: 18px;
+            width: 180px;
+            height: 180px;
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <header class="navbar">
+            <div class="nav-left">
+                <a href="#" class="nav-btn">Home</a>
+                <a href="#" class="nav-btn">About</a>
+            </div>
+            
+            <h1 class="main-title">Capitão américa</h1>
+            
+            <a href="#" class="nav-btn">Login</a>
+        </header>
+
+        <section class="hero-section">
+            <div class="hero-border">
+                <img class="hero-image" src="https://images.universohq.com/2014/03/capitao_america_2_filme07.jpg" alt="Capitão América em Winter Soldier">
+            </div>
+        </section>
+
+        <p class="description-text">
+            O Capitão América é um super-herói da Marvel conhecido por representar coragem, justiça e patriotismo. Seu verdadeiro nome é Steve Rogers, um jovem fraco fisicamente que participou de um experimento e se tornou um supersoldado. Usando seu famoso escudo de vibranium, ele luta para proteger as pessoas e lidera os Vingadores contra grandes ameaças.
+        </p>
+
+        <footer class="image-gallery">
+            <div class="gallery-card">
+                <img class="gallery-image" src="https://m.media-amazon.com/images/M/MV5BMzA2NDkwODAwM15BMl5BanBnXkFtZTgwODMxNjEwMDE@._V1_.jpg" alt="Capitão América Vingadores">
+            </div>
+            <div class="gallery-card">
+                <img class="gallery-image" src="https://Ouxp539w.mexcstatic.com/blog/2024/09/25133615/image-130.png" alt="Steve Rogers ferido">
+            </div>
+            <div class="gallery-card">
+                <img class="gallery-image" src="https://m.media-amazon.com/images/M/MV5BMTQ4MzkzNjkwOF5BMl5BanBnXkFtZTcwMTE4MDccMQ@@._V1_.jpg" alt="Capitão América Primeiro Vingador">
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

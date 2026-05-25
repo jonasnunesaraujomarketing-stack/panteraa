@@ -1,56 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <Style>
+    <title>Capitão América</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Luckiest+Guy&display=swap" rel="stylesheet">
 
-    </Style>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    <div class="Container" >
+        body {
+            background-color: #2b2b2b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: "Comic Neue", cursive, sans-serif;
+        }
 
-        <Div class="capitao-story">
-            <h1>CAPITÃO AMÉRICA</h1>
-            <p>O Capitão América é um dos heróis mais icônicos da Marvel Comics. Seu nome verdadeiro é Steve Rogers, um jovem frágil que se voluntariou para um experimento durante a Segunda Guerra Mundial e se transformou em um supersoldado.</p>
-            <p>Ele representa valores como coragem, justiça e liderança. Mesmo não tendo superpoderes “mágicos”, seu soro lhe deu força, velocidade e resistência acima do normal, além de uma mente estratégica brilhante. Seu escudo de vibranium é praticamente indestrutível e virou seu símbolo.</p>
-            <p>Mais do que lutar contra vilões, o Capitão América luta pelo que acredita ser certo — mesmo quando o mundo inteiro discorda. Ele é o tipo de herói que coloca o bem coletivo acima de si mesmo.</p>
-            <p>Frase que resume bem ele: “Não importa o tamanho da batalha — o que importa é nunca abandonar seus princípios.”</p>
-
-        </Div>
-
-        <div class="capitao-total">
-            <div class="card1">
-            
+        .Fundo {
+            background-color: #4a9ec5;
+            width: 960px;
+            height: 560px;
+            padding: 45px 55px;
+            border: 1px solid #333;
+            display: flex;
+            position: relative;
+        }
 
         
+        .content-left {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
 
+        h1 {
+            font-family: "Luckiest Guy", cursive;
+            font-size: 3.5rem;
+            color: #000000;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+        }
 
+        p {
+            color: #ff0000; 
+            font-size: 1.05rem;
+            line-height: 1.35;
+            margin-bottom: 18px;
+            font-weight: 700;
+            letter-spacing: -0.2px;
+        }
 
+        .highlight {
+            color: #ffffff;
+        }
+
+        .quote-title {
+            margin-bottom: 2px;
+        }
+
+        /* Coluna das Imagens (Direita) */
+        .image-right {
+            width: 40%;
+            position: relative;
+        }
+
+        /* Card Cinza de Fundo */
+        .card-shadow {
+            background-color: #cccccc;
+            width: 265px;
+            height: 370px;
+            border-radius: 16px;
+            position: absolute;
+            right: 15px;
+            top: 55px;
+        }
+
+        .card-main {
+            background-color: #f6ebd4; 
+            width: 265px;
+            height: 370px;
+            border-radius: 16px;
+            position: absolute;
+            right: 50px;
+            top: 70px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: -2px 5px 15px rgba(0,0,0,0.15);
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="Fundo">
+        
+        <div class="content-left">
+            <h1>Capitão América</h1>
             
-
+            <p>
+                O Capitão América é um dos heróis mais icônicos da Marvel Comics. Seu nome verdadeiro é <span class="highlight">Steve Rogers</span>, um jovem frágil que se voluntariou para um experimento durante a Segunda Guerra Mundial e se transformou em um supersoldado.
+            </p>
+            
+            <p>
+                Ele representa valores como coragem, justiça e liderança. Mesmo não tendo superpoderes "mágicos", seu soro lhe deu força, velocidade e resistência acima do normal, além de uma mente estratégica brilhante. Seu escudo de vibranium é praticamente indestrutível e virou seu símbolo.
+            </p>
+            
+            <p>
+                Mais do que lutar contra vilões, o <span class="highlight">Capitão América</span> luta pelo que acredita ser certo — mesmo quando o mundo inteiro discorda. Ele é o tipo de herói que coloca o bem coletivo acima de si mesmo.
+            </p>
+            
+            <div style="margin-top: 5px;">
+                <p class="quote-title">Frase que resume bem ele:</p>
+                <p class="quote-text">"Não importa o tamanho da batalha — o que importa é nunca abandonar seus princípios."</p>
             </div>
-              <img src="américa1.png" alt="Capitao américa" class="">
-
         </div>
 
-        <div class="" >
-
+        <div class="image-right">
+            <div class="card-shadow"></div>
+            <div class="card-main">
+                <img class="hero-img" src="img/américa.jpg" alt="Capitão América" 
+            </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
 
     </div>
+
 </body>
 </html>
